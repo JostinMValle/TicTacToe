@@ -13,7 +13,23 @@
       <button onclick="iniciarJuego('jugador')">Jugador vs Jugador</button>
       <button onclick="iniciarJuego('ia')">Jugador vs IA</button>
     </div>
+    <button class="info-btn" onclick="toggleInstrucciones()">Información</button>
+    <div id="instrucciones" class="instrucciones oculto">
+      <h2>Instrucciones del Juego</h2>
+      <p>El objetivo es alinear tres símbolos iguales (X o O) en línea recta: horizontal, vertical o diagonal.</p>
+      <ul>
+        <li>Turno por turno, cada jugador coloca su símbolo en una celda vacía.</li>
+        <li>Gana quien logre alinear tres de sus símbolos primero.</li>
+        <li>Si se llenan todas las celdas sin un ganador, el juego termina en empate.</li>
+      </ul>
+    </div>
   </div>
   <script src="inicio.js"></script>
+  <script>
+    function toggleInstrucciones() {
+      const instrucciones = document.getElementById('instrucciones');
+      instrucciones.classList.toggle('oculto');
+    }
+  </script>
 </body>
 </html>

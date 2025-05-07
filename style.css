@@ -167,3 +167,43 @@ p {
 .color-o {
   color: #9d0208; /* rojo oscuro o el color que gustes */
 }
+
+
+
+.info-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #caffbf;
+  color: #2d6a4f;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 #555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.info-btn:hover {
+  transform: scale(1.05);
+}
+
+.instrucciones {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e0ecff;
+  border: 2px dashed #1e3a8a;
+  border-radius: 8px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: #1e3a8a;
+}
+
+.instrucciones h2 {
+  margin-top: 0;
+}
+
+.instrucciones.oculto {
+  display: none;
+}
